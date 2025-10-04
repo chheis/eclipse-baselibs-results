@@ -1,0 +1,4194 @@
+{
+  "expand": "schema,names",
+  "startAt": 0,
+  "maxResults": 161,
+  "total": 161,
+  "issues": [
+    {
+      "id": "001",
+      "key": "REQ-C-JSON-001",
+      "fields": {
+        "summary": "Parse JSON from file path",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON library shall provide functionality to parse JSON documents from a file path. The parser shall return a Result<Any> type containing the parsed JSON structure or an error code.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "002",
+      "key": "REQ-C-JSON-002",
+      "fields": {
+        "summary": "Parse JSON from memory buffer",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON library shall provide functionality to parse JSON documents from an in-memory buffer or string. The parser shall accept a string_view and return a Result<Any> type.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "003",
+      "key": "REQ-C-JSON-003",
+      "fields": {
+        "summary": "Support RFC-8259 JSON standard",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON library shall support the full functional set of RFC-8259 JSON standard. All valid JSON documents conforming to RFC-8259 shall be parsed correctly.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "004",
+      "key": "REQ-C-JSON-004",
+      "fields": {
+        "summary": "Support pluggable parser implementations",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON library shall support multiple parser implementations (vaJson and nlohmann) selectable via feature flags. The parser implementation shall be abstracted through the IJsonParser interface.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "005",
+      "key": "REQ-C-JSON-005",
+      "fields": {
+        "summary": "Write JSON Object to file",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON library shall provide functionality to write JSON Object data structures to a file at a specified path. The operation shall return a ResultBlank indicating success or failure.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "006",
+      "key": "REQ-C-JSON-006",
+      "fields": {
+        "summary": "Serialize JSON to string buffer",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON library shall provide functionality to serialize JSON data structures into in-memory string buffers. The operation shall return Result<std::string> containing serialized JSON or an error.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "007",
+      "key": "REQ-C-JSON-007",
+      "fields": {
+        "summary": "Represent JSON using Any variant type",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON library shall use an Any variant type to represent JSON values of unknown type at compile time. The variant shall support bool, Number, string, Null, Object, and List types.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "008",
+      "key": "REQ-C-JSON-008",
+      "fields": {
+        "summary": "Support all JSON primitive types",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON library shall support all JSON primitive types including boolean, numeric types, strings, null values, objects (maps), and arrays (lists). Each type shall be properly represented in the type system.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "009",
+      "key": "REQ-C-JSON-009",
+      "fields": {
+        "summary": "Enforce lossless numeric conversions",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON library shall enforce lossless numeric conversions by rejecting conversions that would result in precision loss or overflow. Type conversion failures shall return kWrongType error codes.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "010",
+      "key": "REQ-C-JSON-010",
+      "fields": {
+        "summary": "Provide type-safe conversion with As template method",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON library shall provide a templated As<T>() method on Any instances to convert JSON values to specific C++ types. The method shall return Result<T> to indicate success or type mismatch errors.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "011",
+      "key": "REQ-C-JSON-011",
+      "fields": {
+        "summary": "Support struct serialization with ToJsonAny",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON library shall provide ToJsonAny<T>() function to convert C++ struct instances into JSON Any representations. Structs must be marked with STRUCT_VISITABLE macro to enable serialization.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "012",
+      "key": "REQ-C-JSON-012",
+      "fields": {
+        "summary": "Support struct deserialization with FromJsonAny",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON library shall provide FromJsonAny<T>() function to convert JSON Any representations into C++ struct instances. The function shall return Result<T> to indicate success or deserialization errors.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "013",
+      "key": "REQ-C-JSON-013",
+      "fields": {
+        "summary": "Use static reflection for struct serialization",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON library shall use static reflection via STRUCT_VISITABLE macro to enable declarative serialization and deserialization of C++ structs. All fields listed in the macro shall be automatically processed.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "014",
+      "key": "REQ-C-JSON-014",
+      "fields": {
+        "summary": "Support optional fields with std::optional",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON library shall support optional struct fields wrapped in std::optional<T>. Missing optional fields during deserialization shall not cause errors and shall result in std::nullopt values.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "015",
+      "key": "REQ-C-JSON-015",
+      "fields": {
+        "summary": "Define JSON error codes and domain",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON library shall define error codes (kUnknownError, kWrongType, kKeyNotFound, kParsingError, kInvalidFilePath) and ErrorDomain class. The domain shall provide human-readable error messages.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "016",
+      "key": "REQ-C-JSON-016",
+      "fields": {
+        "summary": "Use Result pattern for all error handling",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON library shall use Result<T> pattern for all operations that can fail. Operations shall return either Result<T> with a value or Result<T> with an error code, never throwing exceptions.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "017",
+      "key": "REQ-C-JSON-017",
+      "fields": {
+        "summary": "Declare all interfaces as noexcept",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON library shall declare all public interface methods as noexcept to guarantee exception-free operation. This requirement supports ASIL B certification and safety-critical usage.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "018",
+      "key": "REQ-C-JSON-018",
+      "fields": {
+        "summary": "Support ASIL B certification with vaJson parser",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON library shall support ASIL B safety certification when configured to use the vaJson parser from Vector. The library implementation shall meet all ASIL B safety requirements.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "019",
+      "key": "REQ-C-JSON-019",
+      "fields": {
+        "summary": "Implement move-only semantics for Any type",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON library shall implement move-only semantics for the Any type by deleting copy constructors and copy assignment operators. All transfers shall use move semantics to avoid unnecessary copies.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "020",
+      "key": "REQ-C-JSON-020",
+      "fields": {
+        "summary": "Provide CloneByValue for deep copying",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON library shall provide a CloneByValue() method on Any instances to create deep copies of JSON structures. This method shall recursively clone all nested objects and arrays.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "021",
+      "key": "REQ-C-Result-021",
+      "fields": {
+        "summary": "Provide Result type alias for expected with Error",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide Result<T> as type alias for score::details::expected<T, score::result::Error>. This type shall be used for all operations that can fail instead of throwing exceptions.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "022",
+      "key": "REQ-C-Result-022",
+      "fields": {
+        "summary": "Implement C++23 expected for exception-free error handling",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall implement the C++23 expected type (P0323) for exception-free error handling. This implementation shall support both value and error states without throwing exceptions.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "023",
+      "key": "REQ-C-Result-023",
+      "fields": {
+        "summary": "Support custom error domains via ErrorDomain class",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide an abstract ErrorDomain class that users can inherit to define custom error domains. Each domain shall implement MessageFor() to translate error codes into human-readable strings.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "024",
+      "key": "REQ-C-Result-024",
+      "fields": {
+        "summary": "Support enum-based error codes with ErrorCode type",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall support user-defined enum classes as error codes where the underlying type is ErrorCode. Error enums shall be validated at compile-time using type traits.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "025",
+      "key": "REQ-C-Result-025",
+      "fields": {
+        "summary": "Enable ADL-based MakeError function for error construction",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall use Argument-Dependent Lookup (ADL) to find user-defined MakeError() functions that construct Error instances from custom error codes. This enables domain-specific error creation.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "026",
+      "key": "REQ-C-Result-026",
+      "fields": {
+        "summary": "Provide Error class with code, domain, and user message",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide an Error class containing an error code, error domain reference, and optional user message. The Error class shall support comparison operations and stream output.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "027",
+      "key": "REQ-C-Result-027",
+      "fields": {
+        "summary": "Support implicit conversion from error codes to Error",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The Error class shall provide an implicit conversion constructor from user-defined error code enums. This constructor shall use ADL to invoke the appropriate MakeError() function.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "028",
+      "key": "REQ-C-Result-028",
+      "fields": {
+        "summary": "Provide MakeUnexpected helper for creating unexpected results",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide MakeUnexpected() helper functions to create unexpected Result values from error codes and optional user messages. This simplifies error return syntax.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "029",
+      "key": "REQ-C-Result-029",
+      "fields": {
+        "summary": "Support ResultBlank for void return types",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide ResultBlank as Result<Blank> for functions that return only success/error without a value. This shall be used instead of Result<void> which is not supported.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "030",
+      "key": "REQ-C-Result-030",
+      "fields": {
+        "summary": "Enable error comparison with error codes",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The Error class shall support equality/inequality comparison with user-defined error code enums. This enables checking specific error conditions in error handling code.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "031",
+      "key": "REQ-C-Memory-031",
+      "fields": {
+        "summary": "Support shared memory region creation with named paths",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall support creating shared memory regions with POSIX-style names (initial slash followed by non-slash characters). Creation shall support configurable size, permissions, and initialization callbacks.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "032",
+      "key": "REQ-C-Memory-032",
+      "fields": {
+        "summary": "Support opening existing shared memory regions",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall support opening existing shared memory regions by name with configurable read/write access. Opening shall support provider allowlisting to restrict access to regions created by specific UIDs.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "033",
+      "key": "REQ-C-Memory-033",
+      "fields": {
+        "summary": "Implement OffsetPtr for cross-process pointer validity",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide OffsetPtr that stores addresses as byte offsets relative to the pointer's own location. This enables pointer validity across processes mapping the same shared memory at different addresses.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "034",
+      "key": "REQ-C-Memory-034",
+      "fields": {
+        "summary": "Implement bounds checking for OffsetPtr operations",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide globally configurable bounds checking for OffsetPtr dereferences. Bounds checking shall validate that pointed-to objects lie within valid memory regions and terminate on violations.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "035",
+      "key": "REQ-C-Memory-035",
+      "fields": {
+        "summary": "Provide PolymorphicOffsetPtrAllocator for shared memory containers",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide PolymorphicOffsetPtrAllocator that uses OffsetPtr and MemoryResourceProxy to enable standard containers in shared memory. The allocator shall fall back to std::malloc when proxy is null.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "036",
+      "key": "REQ-C-Memory-036",
+      "fields": {
+        "summary": "Implement MemoryResourceRegistry singleton for resource tracking",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide a thread-safe singleton MemoryResourceRegistry to store all ManagedMemoryResource instances indexed by unique identifiers. The registry shall support multiple readers with single writer semantics.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "037",
+      "key": "REQ-C-Memory-037",
+      "fields": {
+        "summary": "Support shared memory factory pattern with singleton enforcement",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall implement SharedMemoryFactory to ensure only one SharedMemoryResource per path per process. The factory shall return existing instances from internal map to prevent multiple mmaps of the same region.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "038",
+      "key": "REQ-C-Memory-038",
+      "fields": {
+        "summary": "Provide Vector container for shared memory",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide Vector<T> type alias wrapping std::vector with PolymorphicOffsetPtrAllocator and scoped allocator. Vector shall be usable in shared memory with proper allocator propagation.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "039",
+      "key": "REQ-C-Memory-039",
+      "fields": {
+        "summary": "Provide String container for shared memory",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide String type alias wrapping std::basic_string with PolymorphicOffsetPtrAllocator. String shall support interoperability with std::string through comparison operators.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "040",
+      "key": "REQ-C-Memory-040",
+      "fields": {
+        "summary": "Support typed memory allocation on QNX",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide abstraction for QNX typed memory allocation supporting both named and anonymous typed memory regions. Typed memory support shall be conditionally compiled for QNX platforms.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "041",
+      "key": "REQ-C-Memory-041",
+      "fields": {
+        "summary": "Implement file lock mutex for inter-process synchronization",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide FlockMutex using flock/fcntl operations on lock files for inter-process synchronization. The implementation shall support both exclusive and shared locks.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "042",
+      "key": "REQ-C-Memory-042",
+      "fields": {
+        "summary": "Support access control lists for shared memory",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall support three permission models for shared memory: UserPermissionsMap (ACL-based), WorldReadable, and WorldWritable using std::variant. ACLs shall be applied via file descriptor-based callbacks.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "043",
+      "key": "REQ-C-Memory-043",
+      "fields": {
+        "summary": "Implement control block for shared memory metadata",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Shared memory resources shall maintain an internal control block at the start of memory regions containing an interprocess mutex, atomic allocation counter, and memory resource proxy for bookkeeping.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "044",
+      "key": "REQ-C-Memory-044",
+      "fields": {
+        "summary": "Use sentinel value for null OffsetPtr representation",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall use a sentinel value (kNullPtrRepresentation = 1) to represent null pointers in the offset-based pointer system. This distinguishes null from zero-offset pointers.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "045",
+      "key": "REQ-C-Memory-045",
+      "fields": {
+        "summary": "Implement lock-free memory region tracking",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "MemoryRegionMap shall implement multi-versioning with atomic swaps to enable lock-free reads concurrent with single-writer updates. The system shall maintain multiple versions with reference counting.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "046",
+      "key": "REQ-C-Concurrency-046",
+      "fields": {
+        "summary": "Provide abstract Executor interface for task execution",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide an abstract Executor interface defining a contract for asynchronous task execution. The interface shall support both fire-and-forget (Post) and result-returning (Submit) operations.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "047",
+      "key": "REQ-C-Concurrency-047",
+      "fields": {
+        "summary": "Implement fixed-size ThreadPool executor",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide a ThreadPool executor with a fixed number of worker threads determined at construction time. Worker threads shall be reused for multiple tasks via a thread-safe task queue.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "048",
+      "key": "REQ-C-Concurrency-048",
+      "fields": {
+        "summary": "Support executor shutdown via stop tokens",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Executors shall support cooperative shutdown via stop tokens, providing ShutdownRequested() and Shutdown() methods. Tasks shall receive stop_tokens but are not guaranteed to honor stop requests.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "049",
+      "key": "REQ-C-Concurrency-049",
+      "fields": {
+        "summary": "Provide InterruptibleConditionalVariable with stop token support",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall extend std::condition_variable_any with stop_token support following P0660 design. The implementation shall enable interruption of waiting threads via stop requests.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "050",
+      "key": "REQ-C-Concurrency-050",
+      "fields": {
+        "summary": "Implement one-shot Notification synchronization primitive",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide a Notification class implementing one-shot synchronization where notify() unblocks all waiters until reset() is called. The implementation shall guarantee no spurious wakeups.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "051",
+      "key": "REQ-C-Concurrency-051",
+      "fields": {
+        "summary": "Provide SynchronizedQueue for multi-producer single-consumer",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide SynchronizedQueue supporting multiple senders but only one reader through shared_ptr/weak_ptr ownership model. The queue shall enforce bounded capacity with blocking pop operations.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "052",
+      "key": "REQ-C-Concurrency-052",
+      "fields": {
+        "summary": "Implement InterruptiblePromise and InterruptibleFuture",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide InterruptiblePromise and InterruptibleFuture as reimplementations of std::promise/std::future with stop_token integration. All wait operations shall return score::Result instead of throwing exceptions.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "053",
+      "key": "REQ-C-Concurrency-053",
+      "fields": {
+        "summary": "Support future specializations for value, reference, and void",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "All future and promise templates shall specialize for value types, reference types (T&), and void through template specialization. Each specialization shall handle its type category appropriately.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "054",
+      "key": "REQ-C-Concurrency-054",
+      "fields": {
+        "summary": "Provide TaskResult facade for task control and result retrieval",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide TaskResult<T> combining InterruptibleFuture<T> and stop_source for unified task control and result retrieval. TaskResult shall provide Abort() method for cooperative cancellation.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "055",
+      "key": "REQ-C-Concurrency-055",
+      "fields": {
+        "summary": "Support delayed task execution with time points",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall support DelayedTask that waits until a specific Clock::time_point before executing the callable. Delayed tasks shall be parameterized by Clock type for testability.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "056",
+      "key": "REQ-C-Concurrency-056",
+      "fields": {
+        "summary": "Support periodic task execution at fixed intervals",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "PeriodicTask shall repeatedly execute a callable at fixed intervals starting from a configured first_execution time_point. The implementation shall prevent cumulative drift by using previous + interval scheduling.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "057",
+      "key": "REQ-C-Concurrency-057",
+      "fields": {
+        "summary": "Provide TimedExecutor for time-based task scheduling",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "TimedExecutor<Clock> shall extend the executor pattern with time-based Post() overloads accepting time_points and durations. The implementation shall automatically select delayed or periodic task types.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "058",
+      "key": "REQ-C-Concurrency-058",
+      "fields": {
+        "summary": "Implement LongRunningThreadsContainer for blocking tasks",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "LongRunningThreadsContainer shall create a new jthread for each enqueued task without thread reuse or concurrency limits. This executor targets long-lived blocking operations.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "059",
+      "key": "REQ-C-Concurrency-059",
+      "fields": {
+        "summary": "Use PMR allocators throughout concurrency components",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "All dynamic allocations in concurrency components shall use score::cpp::pmr types with injectable memory_resource. Thread pools shall guarantee no heap allocation after initialization phase.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "060",
+      "key": "REQ-C-Concurrency-060",
+      "fields": {
+        "summary": "Ensure data race freedom for all public APIs",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "All public APIs in Executor, ThreadPool, and synchronization primitives shall be thread-safe without external synchronization. Internal locks shall be acquired in consistent order to prevent deadlock.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "061",
+      "key": "REQ-C-Container-061",
+      "fields": {
+        "summary": "Provide DynamicArray as fixed-size array with runtime size",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide DynamicArray as a fixed-size array whose size is set at construction but not known at compile time. The array shall provide vector-like functionality without resizing capability.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "062",
+      "key": "REQ-C-Container-062",
+      "fields": {
+        "summary": "Support custom allocators including shared-memory allocators",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "DynamicArray shall support custom allocators including standard allocator and shared-memory allocators (PolymorphicOffsetPtrAllocator). The implementation shall use std::allocator_traits for all memory operations.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "063",
+      "key": "REQ-C-Container-063",
+      "fields": {
+        "summary": "Optimize initialization for trivially initializable types",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "DynamicArray shall use memset for zero-initialization of trivially initializable types (trivially default constructible, copy assignable, copyable, and standard layout). Non-trivial types shall use element-wise construction.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "064",
+      "key": "REQ-C-Container-064",
+      "fields": {
+        "summary": "Return raw pointer iterators for performance",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "DynamicArray shall return raw pointers as iterators (not fancy pointers) for performance, avoiding bounds-check overhead during iteration. Bounds checking shall occur only at begin/end iterator creation.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "065",
+      "key": "REQ-C-Container-065",
+      "fields": {
+        "summary": "Implement stack-copy pattern for shared memory safety",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "DynamicArray shall copy fancy pointers to stack before bounds checking to prevent TOCTOU (time-of-check-time-of-use) attacks in shared memory. Static helper methods shall prevent member modification during execution.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "066",
+      "key": "REQ-C-Container-066",
+      "fields": {
+        "summary": "Provide IntrusiveList as doubly-linked intrusive container",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall implement intrusive doubly-linked list where elements inherit from intrusive_list_element and contain link pointers. The design shall follow P0406R1 proposal with Boost extensions.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "067",
+      "key": "REQ-C-Container-067",
+      "fields": {
+        "summary": "Support multi-tag intrusive lists for multiple list membership",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "IntrusiveList shall support tag template parameter to allow elements in multiple lists simultaneously using different base classes. A default_intrusive_tag shall be provided for single-list usage.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "068",
+      "key": "REQ-C-Container-068",
+      "fields": {
+        "summary": "Implement disposer pattern for element cleanup",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "IntrusiveList shall support *_and_dispose variants (pop_front_and_dispose, erase_and_dispose, clear_and_dispose) for user-defined cleanup during unlinking. Disposers shall be noexcept callable taking element pointer.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "069",
+      "key": "REQ-C-Container-069",
+      "fields": {
+        "summary": "Use non-owning container model for intrusive lists",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "IntrusiveList shall not own elements; destruction shall only unlink elements without destroying them. No allocator support is needed since the container doesn't allocate element memory.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "070",
+      "key": "REQ-C-Container-070",
+      "fields": {
+        "summary": "Implement circular list with sentinel root node",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "IntrusiveList shall use circular doubly-linked list with root sentinel node for constant-time front/back access. The root node shall point to itself when the list is empty.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "071",
+      "key": "REQ-C-Filesystem-071",
+      "fields": {
+        "summary": "Support POSIX path construction and normalization",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall support construction of filesystem paths from character sequences with POSIX format. Path normalization shall resolve '.' and '..' components lexically.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "072",
+      "key": "REQ-C-Filesystem-072",
+      "fields": {
+        "summary": "Provide path decomposition operations",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall decompose paths into components: root name, root directory, relative path, parent path, filename, stem, and extension. Each operation shall handle edge cases for special filenames.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "073",
+      "key": "REQ-C-Filesystem-073",
+      "fields": {
+        "summary": "Support file status query operations",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall determine file type and permissions via POSIX stat/lstat operations. Supported file types shall include regular, directory, symlink, block, character, fifo, socket, and unknown.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "074",
+      "key": "REQ-C-Filesystem-074",
+      "fields": {
+        "summary": "Implement file copying with options",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall copy files with support for copy options: skip existing, overwrite existing, update existing, recursive, copy symlinks, and preserve permissions.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "075",
+      "key": "REQ-C-Filesystem-075",
+      "fields": {
+        "summary": "Provide directory creation operations",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall create single directories and directory trees (creating all parent directories as needed). Directory creation shall use configurable permission modes.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "076",
+      "key": "REQ-C-Filesystem-076",
+      "fields": {
+        "summary": "Support directory iteration",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide iterators for directory entries that skip dot and dot-dot entries. Recursive iteration shall be supported with symlink following options.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "077",
+      "key": "REQ-C-Filesystem-077",
+      "fields": {
+        "summary": "Implement atomic file update mechanism",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide atomic file update using temporary files. On close, temporary file content shall be synced to disk then atomically renamed to target path.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "078",
+      "key": "REQ-C-Filesystem-078",
+      "fields": {
+        "summary": "Provide file stream factory interface",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide abstract factory (IFileFactory) for creating iostream objects from paths. The factory shall support dependency injection and mocking for testability.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "079",
+      "key": "REQ-C-Filesystem-079",
+      "fields": {
+        "summary": "Support symbolic link operations",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall support symbolic link creation (file and directory symlinks), reading symlink targets, and distinguishing symlink vs. target operations.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "080",
+      "key": "REQ-C-Filesystem-080",
+      "fields": {
+        "summary": "Use Result types for error handling",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall use score::result::Result<T> for operations returning values and ResultBlank for void operations. All filesystem operations shall return Result types rather than throwing exceptions.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "081",
+      "key": "REQ-C-OS-081",
+      "fields": {
+        "summary": "Provide OS-agnostic error abstraction",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide an OS-independent error enumeration that maps platform-specific errno values to portable error codes, supporting both POSIX-compliant and platform-specific errors.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "082",
+      "key": "REQ-C-OS-082",
+      "fields": {
+        "summary": "Support Object Seam pattern for testability",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "All OS abstraction classes shall inherit from ObjectSeam<T> template to enable dependency injection and test double substitution without link-time dependencies.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "083",
+      "key": "REQ-C-OS-083",
+      "fields": {
+        "summary": "Wrap POSIX spawn operations",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall wrap posix_spawn family functions with type-safe interfaces supporting process creation, attributes (signals, scheduling, credentials), and file actions.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "084",
+      "key": "REQ-C-OS-084",
+      "fields": {
+        "summary": "Provide pthread operation abstractions",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide thread management including thread naming, CPU clock access, mutex/condition variable operations, and scheduling parameters.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "085",
+      "key": "REQ-C-OS-085",
+      "fields": {
+        "summary": "Support QNX-specific IPC mechanisms",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "For QNX builds, the library shall provide abstractions for native IPC mechanisms including channels (MsgReceive, MsgSend), pulses, and connection management.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "086",
+      "key": "REQ-C-OS-086",
+      "fields": {
+        "summary": "Wrap file control operations",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall wrap fcntl and open operations with type-safe Command, Open, and Operation enumerations replacing raw integer flags.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "087",
+      "key": "REQ-C-OS-087",
+      "fields": {
+        "summary": "Support memory-mapped file operations",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall wrap mmap/munmap with typed Protection and Map flag enumerations, plus shared memory operations (shm_open, shm_unlink).",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "088",
+      "key": "REQ-C-OS-088",
+      "fields": {
+        "summary": "Provide socket operation abstractions",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide socket creation, binding, connection, and data transfer operations with typed Domain and MessageFlag enumerations.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "089",
+      "key": "REQ-C-OS-089",
+      "fields": {
+        "summary": "Use preprocessor-based platform selection",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Implementations shall use #if defined(__QNX__) and #if defined(__linux__) to conditionally compile platform-specific code paths without exposing them in the API.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "090",
+      "key": "REQ-C-OS-090",
+      "fields": {
+        "summary": "Support bitmask operators for flag enums",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Enumeration types representing bit flags shall enable bitwise operators (|, &, ^) via enable_bitmask_operators template specialization.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "091",
+      "key": "REQ-C-Utils-091",
+      "fields": {
+        "summary": "Provide PIMPL pattern smart pointer",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall implement a template smart pointer (pimpl_ptr) that uses aligned storage on the stack to avoid heap allocation for PIMPL idiom implementations.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "092",
+      "key": "REQ-C-Utils-092",
+      "fields": {
+        "summary": "Support RAII scope guard",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall implement a non-copyable, non-movable RAII wrapper (ScopedOperation) that executes a stored callback on destruction.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "093",
+      "key": "REQ-C-Utils-093",
+      "fields": {
+        "summary": "Provide payload validation utilities",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall implement payload validation (IsPayloadInvalid) that detects service data containing all 0x00 (default) or all 0xFF (invalid) bytes.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "094",
+      "key": "REQ-C-Utils-094",
+      "fields": {
+        "summary": "Support duration to timespec conversion",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall convert C++ std::chrono::duration types to POSIX timespec structure by extracting seconds and nanoseconds components.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "095",
+      "key": "REQ-C-Utils-095",
+      "fields": {
+        "summary": "Provide string hash computation",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide a wrapper function (get_string_as_hash) that computes std::size_t hash value from a string using the standard library hasher.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "096",
+      "key": "REQ-C-Bitmanip-096",
+      "fields": {
+        "summary": "Provide type-safe HalfByte wrapper",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide type-safe 4-bit value wrapper that constructs from uint8_t and automatically masks upper 4 bits, ensuring only values 0-15 are represented.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "097",
+      "key": "REQ-C-Bitmanip-097",
+      "fields": {
+        "summary": "Support bounds-checked bit operations",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide SetBit(), ClearBit(), ToggleBit(), and CheckBit() functions that validate bit positions are within type bounds before manipulation.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "098",
+      "key": "REQ-C-Bitmanip-098",
+      "fields": {
+        "summary": "Implement compile-time byte extraction",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide GetByte<position>() template function that extracts specific bytes from multi-byte integral types using compile-time position validation.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "099",
+      "key": "REQ-C-Bitmanip-099",
+      "fields": {
+        "summary": "Enable bitmask operators for scoped enums",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide enable_bitmask_operators<T> trait class using specialization pattern to opt-in scoped enums for bitwise operations (|, &, ^, ~).",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "100",
+      "key": "REQ-C-Bitmanip-100",
+      "fields": {
+        "summary": "Ensure constexpr evaluation support",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "All bit manipulation functions, type constructors, and bitmask operators shall be marked constexpr to enable compile-time evaluation and optimization.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "101",
+      "key": "REQ-C-MW-101",
+      "fields": {
+        "summary": "Support multi-level logging",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The logging system shall support six log levels (Fatal, Error, Warn, Info, Debug, Verbose) with configurable thresholds per context.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "102",
+      "key": "REQ-C-MW-102",
+      "fields": {
+        "summary": "Provide stream-based logging API",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "LogStream class shall provide RAII-based streaming interface supporting operator<< for basic types and custom types via operator overloading.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "103",
+      "key": "REQ-C-MW-103",
+      "fields": {
+        "summary": "Implement lock-free circular allocator",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "CircularAllocator shall implement multi-producer lock-free ring buffer with atomic slot claiming and overflow handling.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "104",
+      "key": "REQ-C-MW-104",
+      "fields": {
+        "summary": "Support context-based logging",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Logger class shall support context identifiers (4-byte max) for organizing log messages with default context and per-message context specification.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "105",
+      "key": "REQ-C-MW-105",
+      "fields": {
+        "summary": "Provide best-effort logging semantics",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "All logging operations shall be noexcept with graceful degradation when slots unavailable or memory exhausted. No exceptions or error returns from user-facing API.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "106",
+      "key": "REQ-C-Reflection-106",
+      "fields": {
+        "summary": "Provide generic visitation mechanism",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide visit() function supporting compile-time type introspection via visit_as() customization points for struct field enumeration.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "107",
+      "key": "REQ-C-Reflection-107",
+      "fields": {
+        "summary": "Support type-safe serialization framework",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide serializer_t with compile-time serialized type calculation and serialize/deserialize operations with offset tracking.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "108",
+      "key": "REQ-C-Reflection-108",
+      "fields": {
+        "summary": "Support multiple serialization formats",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The system shall support memcpy (POD types), array, vector, string, pair, tuple, and pack serialization with little-endian encoding.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "109",
+      "key": "REQ-C-Reflection-109",
+      "fields": {
+        "summary": "Provide compile-time size computation",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall calculate serialized data size statically where possible, accounting for fixed overhead, dynamic offsets, and container element counts.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "110",
+      "key": "REQ-C-Language-110",
+      "fields": {
+        "summary": "Provide overflow-checked arithmetic",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The safe_math library shall provide Add, Subtract, Multiply, Divide, Negate operations with compile-time and runtime overflow detection returning Result<T> types.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "111",
+      "key": "REQ-C-Language-111",
+      "fields": {
+        "summary": "Support type-safe numeric conversions",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Cast operations shall detect narrowing conversions, sign mismatches, and precision loss for integral and floating-point types, returning errors instead of silent truncation.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "112",
+      "key": "REQ-C-Language-112",
+      "fields": {
+        "summary": "Implement scoped function objects",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "MoveOnlyScopedFunction shall wrap callables with automatic cancellation when scope exits or stop_token requested, preventing use-after-scope errors.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "113",
+      "key": "REQ-C-Language-113",
+      "fields": {
+        "summary": "Provide expected monad implementation",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide expected<Value,Error> with monadic error handling including has_value(), value(), error() accessors and implicit conversions.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "114",
+      "key": "REQ-C-Language-114",
+      "fields": {
+        "summary": "Support PMR memory resources",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The library shall provide memory resource abstractions supporting polymorphic allocators, monotonic buffers, and unsynchronized pools with standard memory_resource interface.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "115",
+      "key": "REQ-C-Analysis-115",
+      "fields": {
+        "summary": "Support trace client registration",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "ITraceLibrary shall support RegisterClient() for multiple binding types (ARA-COM, DLT) returning unique TraceClientId for subsequent operations.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "116",
+      "key": "REQ-C-Analysis-116",
+      "fields": {
+        "summary": "Provide shared memory management",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The system shall support RegisterShmObject() via path or file descriptor, UnregisterShmObject() for lifecycle management with handle-based access.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "117",
+      "key": "REQ-C-Analysis-117",
+      "fields": {
+        "summary": "Implement trace operation interface",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Trace() shall support both shared-memory (ShmDataChunkList) and local-memory (LocalDataChunkList) data sources with meta-info variants.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "118",
+      "key": "REQ-C-Analysis-118",
+      "fields": {
+        "summary": "Support asynchronous completion callbacks",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "RegisterTraceDoneCB() shall allow per-client callbacks (TraceDoneCallBackType) invoked sequentially upon trace completion.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "119",
+      "key": "REQ-C-Analysis-119",
+      "fields": {
+        "summary": "Provide flexible circular allocator",
+        "issuetype": {
+          "id": "1",
+          "description": "Code implementation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "IFlexibleCircularAllocator shall provide Allocate/Deallocate with configurable alignment, bounds checking, and available memory queries.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "001",
+      "key": "REQ-DOC-Baselibs-001",
+      "fields": {
+        "summary": "Core Software Utilities",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The base libraries shall include core software utilities and common infrastructure components needed by multiple platform modules.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "002",
+      "key": "REQ-DOC-Baselibs-002",
+      "fields": {
+        "summary": "Safety Relevance up to ASIL-B",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The base libraries shall implement functionality necessary to support safety-relevant platform components up to ASIL-B for selected functionalities.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "003",
+      "key": "REQ-DOC-Baselibs-003",
+      "fields": {
+        "summary": "Multi-Language APIs (C++/Rust)",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The base libraries shall provide APIs for C++, Rust, or both, depending on the requirements of consuming platform components.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "004",
+      "key": "REQ-DOC-Baselibs-004",
+      "fields": {
+        "summary": "Consistent APIs with Language Idioms",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The base libraries shall provide consistent APIs while respecting language-specific idioms.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "005",
+      "key": "REQ-DOC-Baselibs-005",
+      "fields": {
+        "summary": "Maintainable Design",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The base libraries shall be designed for maintainability and code reuse.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "006",
+      "key": "REQ-DOC-Baselibs-006",
+      "fields": {
+        "summary": "Security Robustness",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The base libraries shall adhere to secure coding standards to prevent vulnerabilities across platform components.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "007",
+      "key": "REQ-DOC-JSON-007",
+      "fields": {
+        "summary": "JSON Validation Service",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON-Library shall provide a service to check the well-formedness of JSON data.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "008",
+      "key": "REQ-DOC-JSON-008",
+      "fields": {
+        "summary": "JSON Deserialization (RFC8259)",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON-Library shall provide a service to parse JSON data according to RFC8259.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "009",
+      "key": "REQ-DOC-JSON-009",
+      "fields": {
+        "summary": "JSON Serialization (RFC8259)",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON-Library shall provide a service to serialize user format into JSON data according to RFC8259.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "010",
+      "key": "REQ-DOC-JSON-010",
+      "fields": {
+        "summary": "Return Data in User Format",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON-Library shall return parsed data in a compatible user format. The user format shall be a regular type and not defined within the library.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "011",
+      "key": "REQ-DOC-JSON-011",
+      "fields": {
+        "summary": "Support Programming Language Idioms",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The public API shall support the idioms of the programming language it is written in.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "012",
+      "key": "REQ-DOC-JSON-012",
+      "fields": {
+        "summary": "Use Programming Language Infrastructure",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The public API shall use core infrastructure of its programming language and accompanying standard libraries, whenever possible and meaningful. This includes error handling.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "013",
+      "key": "REQ-DOC-JSON-013",
+      "fields": {
+        "summary": "Enforce Strict Type Compatibility",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The public API shall enforce strict type compatibility. When a user requests a value, the API shall validate that the requested return type is compatible with the type and value of the stored JSON data. This includes checking if the stored value exceeds the range of the expected type.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "014",
+      "key": "REQ-DOC-JSON-014",
+      "fields": {
+        "summary": "Fully Testable Public API",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The public API of the library shall support dependency injection with test doubles. This enables full testability of the user code.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "015",
+      "key": "REQ-DOC-JSON-015",
+      "fields": {
+        "summary": "JSON Library ASIL-B Compliance",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON library shall be ASIL-B compliant.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "016",
+      "key": "REQ-DOC-JSON-016",
+      "fields": {
+        "summary": "JSON Data Integrity (AoU)",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement - AoU",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The integrity of input JSON data shall be ensured by the user.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "017",
+      "key": "REQ-DOC-JSON-017",
+      "fields": {
+        "summary": "Access Control (AoU)",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement - AoU",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Access control and manipulation prevention (e.g. dm-verity) shall be ensured by the hosting process and system configuration.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "018",
+      "key": "REQ-DOC-Result-018",
+      "fields": {
+        "summary": "Result-Based Error Handling",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The Result library shall provide an error handling mechanism that enables functions to return either successful values or error information without using C++ exceptions.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "019",
+      "key": "REQ-DOC-Result-019",
+      "fields": {
+        "summary": "Domain-Specific Error Information",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The Result library shall support user-defined error domains and error codes.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "020",
+      "key": "REQ-DOC-Result-020",
+      "fields": {
+        "summary": "Type-Safe Error Handling",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The Result library shall enforce compile-time type safety for error handling operations.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "021",
+      "key": "REQ-DOC-Result-021",
+      "fields": {
+        "summary": "Standard Library Integration",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The Result library shall provide conversion utilities to transform Result objects into standard library optional type, with enforced error handling.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "022",
+      "key": "REQ-DOC-Result-022",
+      "fields": {
+        "summary": "Deterministic Behavior",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The Result library shall provide deterministic behavior with no dynamic memory allocation.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "023",
+      "key": "REQ-DOC-Result-023",
+      "fields": {
+        "summary": "Exception-Free Operation",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The Result library shall operate without throwing C++ exceptions.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "024",
+      "key": "REQ-DOC-Result-024",
+      "fields": {
+        "summary": "Error Domain Implementation (AoU)",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement - AoU",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The user shall implement error domain classes and error code enumerations according to the library's interface specification.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "025",
+      "key": "REQ-DOC-Result-025",
+      "fields": {
+        "summary": "Result Value Handling (AoU)",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement - AoU",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The user shall check and handle both successful and error states of Result objects before accessing contained values to prevent undefined behavior.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "026",
+      "key": "REQ-DOC-Result-026",
+      "fields": {
+        "summary": "Thread Safety (AoU)",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement - AoU",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The user shall ensure appropriate synchronization mechanisms when using Result objects in multi-threaded environments, as the library provides no internal thread safety guarantees.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "027",
+      "key": "REQ-DOC-Result-027",
+      "fields": {
+        "summary": "Resource Lifetime (AoU)",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement - AoU",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The user shall ensure that error domain objects and referenced resources remain valid throughout the entire lifetime of any dependent Result or Error objects.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "028",
+      "key": "REQ-DOC-Memory-028",
+      "fields": {
+        "summary": "Memory Shared Open Operation",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The memory_shared component shall support Open operation for accessing shared memory regions.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "029",
+      "key": "REQ-DOC-Memory-029",
+      "fields": {
+        "summary": "Memory Shared Update Operation",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The memory_shared component shall support Update operation for modifying shared memory contents.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "030",
+      "key": "REQ-DOC-Memory-030",
+      "fields": {
+        "summary": "Memory Shared Lock Operation",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The memory_shared component shall support Lock operation for synchronizing access to shared memory.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "031",
+      "key": "REQ-DOC-Memory-031",
+      "fields": {
+        "summary": "Memory Shared Set Permissions Operation",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The memory_shared component shall support Set Permissions operation for controlling access rights to shared memory regions.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "032",
+      "key": "REQ-DOC-Memory-032",
+      "fields": {
+        "summary": "Use OS-Level Interfaces (fcntl, stat, mmap)",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The memory_shared component shall use OS-level interfaces including fcntl, stat, and mmap for implementation.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "033",
+      "key": "REQ-DOC-MessagePassing-033",
+      "fields": {
+        "summary": "Message Passing Send Operation",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The message_passing component shall support Send Message operation for inter-process communication.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "034",
+      "key": "REQ-DOC-MessagePassing-034",
+      "fields": {
+        "summary": "OS Message Passing Interface Integration",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The message_passing component shall use OS message passing interface for implementation.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "035",
+      "key": "REQ-DOC-MessagePassing-035",
+      "fields": {
+        "summary": "IPC Binding Integration",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The message_passing component shall integrate with IPC binding component for inter-process communication.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "036",
+      "key": "REQ-DOC-JSON-036",
+      "fields": {
+        "summary": "JSON File-Based Parsing",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON component shall provide file-based JSON parsing capability (FromFile operation).",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "037",
+      "key": "REQ-DOC-JSON-037",
+      "fields": {
+        "summary": "JSON Parser Modular Integration",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON Parser shall be designed for modular integration, supporting use by multiple components including Launch Manager and IPC Binding.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "038",
+      "key": "REQ-DOC-Baselibs-038",
+      "fields": {
+        "summary": "Provide JSON-Library Component",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The base libraries shall provide a JSON-Library with parsing functionality.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "039",
+      "key": "REQ-DOC-Baselibs-039",
+      "fields": {
+        "summary": "Provide Result Library for Exception-Free Development",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The base libraries shall provide error handling mechanisms that enable development without relying on exceptions.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "040",
+      "key": "REQ-DOC-Baselibs-040",
+      "fields": {
+        "summary": "Safety-Critical Component Support",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "All baselibs components (JSON, Result, Memory Shared, Message Passing) shall be designed and validated for safety-critical automotive applications at ASIL-B level.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "041",
+      "key": "REQ-DOC-Baselibs-041",
+      "fields": {
+        "summary": "Security-Enhanced Components",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Memory Shared, Message Passing, and JSON components shall implement security measures to prevent unauthorized access and data manipulation.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "042",
+      "key": "REQ-DOC-Baselibs-042",
+      "fields": {
+        "summary": "Validated Component Status",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "All baselibs components shall maintain a validated status indicating they meet architectural and functional specifications.",
+        "verifiableByCodeOnly": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,974 @@
+{
+  "expand": "schema,names",
+  "startAt": 0,
+  "maxResults": 42,
+  "total": 42,
+  "issues": [
+    {
+      "id": "001",
+      "key": "REQ-DOC-Baselibs-001",
+      "fields": {
+        "summary": "Core Software Utilities",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The base libraries shall include core software utilities and common infrastructure components needed by multiple platform modules.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "002",
+      "key": "REQ-DOC-Baselibs-002",
+      "fields": {
+        "summary": "Safety Relevance up to ASIL-B",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The base libraries shall implement functionality necessary to support safety-relevant platform components up to ASIL-B for selected functionalities.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "003",
+      "key": "REQ-DOC-Baselibs-003",
+      "fields": {
+        "summary": "Multi-Language APIs (C++/Rust)",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The base libraries shall provide APIs for C++, Rust, or both, depending on the requirements of consuming platform components.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "004",
+      "key": "REQ-DOC-Baselibs-004",
+      "fields": {
+        "summary": "Consistent APIs with Language Idioms",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The base libraries shall provide consistent APIs while respecting language-specific idioms.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "005",
+      "key": "REQ-DOC-Baselibs-005",
+      "fields": {
+        "summary": "Maintainable Design",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The base libraries shall be designed for maintainability and code reuse.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "006",
+      "key": "REQ-DOC-Baselibs-006",
+      "fields": {
+        "summary": "Security Robustness",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The base libraries shall adhere to secure coding standards to prevent vulnerabilities across platform components.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "007",
+      "key": "REQ-DOC-JSON-007",
+      "fields": {
+        "summary": "JSON Validation Service",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON-Library shall provide a service to check the well-formedness of JSON data.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "008",
+      "key": "REQ-DOC-JSON-008",
+      "fields": {
+        "summary": "JSON Deserialization (RFC8259)",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON-Library shall provide a service to parse JSON data according to RFC8259.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "009",
+      "key": "REQ-DOC-JSON-009",
+      "fields": {
+        "summary": "JSON Serialization (RFC8259)",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON-Library shall provide a service to serialize user format into JSON data according to RFC8259.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "010",
+      "key": "REQ-DOC-JSON-010",
+      "fields": {
+        "summary": "Return Data in User Format",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON-Library shall return parsed data in a compatible user format. The user format shall be a regular type and not defined within the library.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "011",
+      "key": "REQ-DOC-JSON-011",
+      "fields": {
+        "summary": "Support Programming Language Idioms",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The public API shall support the idioms of the programming language it is written in.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "012",
+      "key": "REQ-DOC-JSON-012",
+      "fields": {
+        "summary": "Use Programming Language Infrastructure",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The public API shall use core infrastructure of its programming language and accompanying standard libraries, whenever possible and meaningful. This includes error handling.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "013",
+      "key": "REQ-DOC-JSON-013",
+      "fields": {
+        "summary": "Enforce Strict Type Compatibility",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The public API shall enforce strict type compatibility. When a user requests a value, the API shall validate that the requested return type is compatible with the type and value of the stored JSON data. This includes checking if the stored value exceeds the range of the expected type.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "014",
+      "key": "REQ-DOC-JSON-014",
+      "fields": {
+        "summary": "Fully Testable Public API",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The public API of the library shall support dependency injection with test doubles. This enables full testability of the user code.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "015",
+      "key": "REQ-DOC-JSON-015",
+      "fields": {
+        "summary": "JSON Library ASIL-B Compliance",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON library shall be ASIL-B compliant.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "016",
+      "key": "REQ-DOC-JSON-016",
+      "fields": {
+        "summary": "JSON Data Integrity (AoU)",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement - AoU",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The integrity of input JSON data shall be ensured by the user.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "017",
+      "key": "REQ-DOC-JSON-017",
+      "fields": {
+        "summary": "Access Control (AoU)",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement - AoU",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Access control and manipulation prevention (e.g. dm-verity) shall be ensured by the hosting process and system configuration.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "018",
+      "key": "REQ-DOC-Result-018",
+      "fields": {
+        "summary": "Result-Based Error Handling",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The Result library shall provide an error handling mechanism that enables functions to return either successful values or error information without using C++ exceptions.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "019",
+      "key": "REQ-DOC-Result-019",
+      "fields": {
+        "summary": "Domain-Specific Error Information",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The Result library shall support user-defined error domains and error codes.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "020",
+      "key": "REQ-DOC-Result-020",
+      "fields": {
+        "summary": "Type-Safe Error Handling",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The Result library shall enforce compile-time type safety for error handling operations.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "021",
+      "key": "REQ-DOC-Result-021",
+      "fields": {
+        "summary": "Standard Library Integration",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The Result library shall provide conversion utilities to transform Result objects into standard library optional type, with enforced error handling.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "022",
+      "key": "REQ-DOC-Result-022",
+      "fields": {
+        "summary": "Deterministic Behavior",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The Result library shall provide deterministic behavior with no dynamic memory allocation.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "023",
+      "key": "REQ-DOC-Result-023",
+      "fields": {
+        "summary": "Exception-Free Operation",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The Result library shall operate without throwing C++ exceptions.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "024",
+      "key": "REQ-DOC-Result-024",
+      "fields": {
+        "summary": "Error Domain Implementation (AoU)",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement - AoU",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The user shall implement error domain classes and error code enumerations according to the library's interface specification.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "025",
+      "key": "REQ-DOC-Result-025",
+      "fields": {
+        "summary": "Result Value Handling (AoU)",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement - AoU",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The user shall check and handle both successful and error states of Result objects before accessing contained values to prevent undefined behavior.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "026",
+      "key": "REQ-DOC-Result-026",
+      "fields": {
+        "summary": "Thread Safety (AoU)",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement - AoU",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The user shall ensure appropriate synchronization mechanisms when using Result objects in multi-threaded environments, as the library provides no internal thread safety guarantees.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "027",
+      "key": "REQ-DOC-Result-027",
+      "fields": {
+        "summary": "Resource Lifetime (AoU)",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement - AoU",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The user shall ensure that error domain objects and referenced resources remain valid throughout the entire lifetime of any dependent Result or Error objects.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "028",
+      "key": "REQ-DOC-Memory-028",
+      "fields": {
+        "summary": "Memory Shared Open Operation",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The memory_shared component shall support Open operation for accessing shared memory regions.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "029",
+      "key": "REQ-DOC-Memory-029",
+      "fields": {
+        "summary": "Memory Shared Update Operation",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The memory_shared component shall support Update operation for modifying shared memory contents.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "030",
+      "key": "REQ-DOC-Memory-030",
+      "fields": {
+        "summary": "Memory Shared Lock Operation",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The memory_shared component shall support Lock operation for synchronizing access to shared memory.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "031",
+      "key": "REQ-DOC-Memory-031",
+      "fields": {
+        "summary": "Memory Shared Set Permissions Operation",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The memory_shared component shall support Set Permissions operation for controlling access rights to shared memory regions.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "032",
+      "key": "REQ-DOC-Memory-032",
+      "fields": {
+        "summary": "Use OS-Level Interfaces (fcntl, stat, mmap)",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The memory_shared component shall use OS-level interfaces including fcntl, stat, and mmap for implementation.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "033",
+      "key": "REQ-DOC-MessagePassing-033",
+      "fields": {
+        "summary": "Message Passing Send Operation",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The message_passing component shall support Send Message operation for inter-process communication.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "034",
+      "key": "REQ-DOC-MessagePassing-034",
+      "fields": {
+        "summary": "OS Message Passing Interface Integration",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The message_passing component shall use OS message passing interface for implementation.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "035",
+      "key": "REQ-DOC-MessagePassing-035",
+      "fields": {
+        "summary": "IPC Binding Integration",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The message_passing component shall integrate with IPC binding component for inter-process communication.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "036",
+      "key": "REQ-DOC-JSON-036",
+      "fields": {
+        "summary": "JSON File-Based Parsing",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON component shall provide file-based JSON parsing capability (FromFile operation).",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "037",
+      "key": "REQ-DOC-JSON-037",
+      "fields": {
+        "summary": "JSON Parser Modular Integration",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The JSON Parser shall be designed for modular integration, supporting use by multiple components including Launch Manager and IPC Binding.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "038",
+      "key": "REQ-DOC-Baselibs-038",
+      "fields": {
+        "summary": "Provide JSON-Library Component",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The base libraries shall provide a JSON-Library with parsing functionality.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "039",
+      "key": "REQ-DOC-Baselibs-039",
+      "fields": {
+        "summary": "Provide Result Library for Exception-Free Development",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "The base libraries shall provide error handling mechanisms that enable development without relying on exceptions.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "040",
+      "key": "REQ-DOC-Baselibs-040",
+      "fields": {
+        "summary": "Safety-Critical Component Support",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "All baselibs components (JSON, Result, Memory Shared, Message Passing) shall be designed and validated for safety-critical automotive applications at ASIL-B level.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "041",
+      "key": "REQ-DOC-Baselibs-041",
+      "fields": {
+        "summary": "Security-Enhanced Components",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Memory Shared, Message Passing, and JSON components shall implement security measures to prevent unauthorized access and data manipulation.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "042",
+      "key": "REQ-DOC-Baselibs-042",
+      "fields": {
+        "summary": "Validated Component Status",
+        "issuetype": {
+          "id": "1",
+          "description": "Documentation requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": { "displayName": "Unassigned", "accountId": "unassigned" },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "All baselibs components shall maintain a validated status indicating they meet architectural and functional specifications.",
+        "verifiableByCodeOnly": true
+      }
+    }
+  ]
+}
